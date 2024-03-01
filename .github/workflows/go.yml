@@ -21,7 +21,3 @@ jobs:
       - name: Build
         run: go build -o repositorio-backend-WS -v ./
 
-      - name: Create Windows Service
-        run: |
-          sc create repositorio-backend-WS binPath= "$PWD/repositorio-backend-WS.exe" start= auto
-
