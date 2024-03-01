@@ -23,6 +23,5 @@ jobs:
 
       - name: Create Windows Service
         run: |
-          sc delete repositorio-backend-WS || true
           sc create repositorio-backend-WS binPath= "$PWD/repositorio-backend-WS.exe" start= auto
 
